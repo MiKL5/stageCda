@@ -1,0 +1,73 @@
+/* PRESENTATION DES PAGES */
+
+/* background */
+body {
+    background-color: rgb(10, 0, 37);
+    height: 100vh;/* 100 de la fenetre du navigateur */
+}
+
+/* Présentation des titres, paraprahes, et liens */
+h1, p {
+    color:rgb(232, 226, 202);
+    font-weight: bold;;
+}
+
+/* paragraphes de la page de confimation d'envoi du mail de changement de mot de passe */
+
+.paragraphe_special {
+    font-weight:bold;
+}
+#paragraphe_special_1 {
+    font-style: italic;
+    color:crimson;
+    text-align: center;
+}
+#paragraphe_special_2 {
+    font-weight: bold;
+    text-align: center;
+}
+/* lien pour resoumettre la demande de changement de mot de passe */
+#link_special {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color: orange;
+}
+
+/* formulaires */
+form {
+    color:rgb(232, 226, 202);
+}
+
+/* Bouton retour */
+#orange {
+    color:orange;
+}
+
+/* NAVBAR */
+/* Liens */
+.navtext {
+    color:rgb(232, 226, 202)!important;
+}
+
+/* phrase de connxion */
+.connex {
+    color:rgb(0, 199, 93);
+    margin-top: 0px;;
+}
+
+#user_roles_help, #user1_roles_help {
+    color:rgb(255, 208, 0)!important;
+    font-style: italic;
+}
+
+.fondmenu {
+    background-color: rgba(50, 50, 50, 0.75)!important;
+
+}
+
+/* survol de la souris */
+.optionmenu:hover {
+    color:rgb(242, 204, 114)!important;
+    background-color: rgba(50, 50, 50, 0.75)!important;
+    }

@@ -1,0 +1,101 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand ms-2 me-5" title="Homepage Velvet Record" href="{{path ('app_home')}}"><img src="/images/record.png" height="48" width="auto"></a>
+	<!-- Les images, les fichiers css sont dans public car c'est le point de départ -->
+	<!-- boutons simples -->
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="col-8 navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link ms-5 navtext" title="Liste des artiste" href="{{path ('app_artist_index')}}">Artiste</a>
+			</li>
+			<li class="nav-item me-5">
+				<a class="nav-link navtext" title="liste des disque" href="{{path ('app_disc_index')}}">Disque</a>
+			</li>
+		</ul>
+	</div>
+	<!-- menu déroulant -->
+	<div class="dropdown optionmenu" title="Menu de l'utilisateur">
+		<button class="btn dropdown-toggle navtext optionmenu" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+			<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-fill navtext" viewbox="0 0 16 16">
+				<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+			</svg>
+		</button>
+		<!-- menu déroulant pour les options de commpte -->
+		<ul
+			class="dropdown-menu bg-dark fondmenu" aria-labelledby="dropdownMenu2">
+			<!-- le contenant de la liste est translucide -->
+			{% if not app.user %}
+				<!-- Ne s'affiche qu'en absence de session (Connexion et S'enregistrer) -->
+				<li>
+					<button class="dropdown-item nav-link navtext optionmenu" type="button" title="Aller à la page de connexion">
+						<a class="dropdown-item nav-link navtext optionmenu" href="{{path ('app_login')}}">Se connecter</a>
+					</button>
+				</li>
+				<li>
+					<button class="dropdown-item nav-link navtext optionmenu" type="button" title="Se créer un compte | Première connexion">
+						<a class="dropdown-item nav-link navtext optionmenu" href="{{path ('app_register')}}">S'enregistrer</a>
+					</button>
+				</li>
+			{% endif %}
+			<!-- que pour l'admin -->
+			{% if is_granted('ROLE_ADMIN') %}
+				<li>
+					<button class="dropdown-item nav-link navtext optionmenu" type="button" title="Liste des utilisateurs">
+						<a class="dropdown-item nav-link navtext optionmenu" href="{{path ('app_user_index')}}">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-rolodex text-warning me-2" viewbox="0 0 16 16">*
+								<path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+								<path d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z"/>
+							</svg>
+							Utilisateurs</a>
+					</button>
+				</li>
+			{% endif %}
+			<!-- accordé au client et role.s supérieur.s -->
+			{% if is_granted('ROLE_CLIENT') %}
+				<li>
+					<button class="dropdown-item nav-link navtext optionmenu" type="button" title="Information sur le profil de {{ app.user.userIdentifier }}">
+						<a class="dropdown-item nav-link navtext optionmenu" href="{{ path('app_client_show', {'id': app.user.id }) }}">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info-lg text-primary me-2" viewbox="0 0 16 16">
+								<path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+							</svg>
+							À propos de
+							{{ app.user.userIdentifier }}</a>
+					</button>
+				</li>
+			{% endif %}
+			<!-- accordés dés user et roles supérieurs -->
+			{% if is_granted('ROLE_USER') %}
+				<li>
+					<button class="dropdown-item nav-link navtext optionmenu" type="button">
+						<a class="dropdown-item nav-link navtext optionmenu" title="Se déconnecter de {{ app.user.userIdentifier }}" href="{{ path('app_logout') }}">
+							<svg class="text-danger me-2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-right" viewbox="0 0 16 16">
+								<path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+								<path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+							</svg>
+							Déconnecter
+							{{ app.user.userIdentifier }}</a>
+					</button>
+				</li>
+			{% endif %}
+		</ul>
+	</div>
+	<!-- End of dropdown -->
+
+	<!-- Confirmation de connexion -->
+	<div class="col-2">
+		{% if app.user %}
+			<!-- utiliser getFullName au lie de userIdentifier -->
+			<div title="Si ce n'est pas vous quittez la session" class="ms-2 connex">Bienvenue
+				{{ app.user.getFullName }}
+				<a
+					title="Quitter la session" href="{{ path('app_logout') }}">
+					<!-- LE BOOTSTRAP COURT NE FONCTIONNE PAS DONC SBOOTSTRAPI UN CHOIX PAR DÉPIT -->
+					<svg class="text-danger ms-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-right" viewbox="0 0 16 16">
+						<path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+						<path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+					</svg>
+				</a>
+			</div>
+		{% endif %}
+		<!-- end of msg -->
+	</div>
+</div></nav>

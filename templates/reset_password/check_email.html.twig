@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Courriel de réinitianlisaation de mot de passe envoyé !
+{% endblock %}
+
+{% block body %}
+	<div class="container mt-5">
+		<h4 class="text-center" style="color:rgb(0, 177, 0)">Votre demande est prise en compte !</h4>
+		<br>
+		<br>
+		<p class="">Si un compte correspond à l'adresse saisie, un mail contenant un lien vous à été envoyé pour réninitalisé le mot de passe.</p>
+		<p class="paragraphe_special">Un mot de passe sécurisé contient au moins dix caractères, dont au moins :
+			<div class="container">
+				<p>- une majuscule ;</p>
+				<p>- un chiffre ;</p>
+				<p>- et éventuellemnt un caractère spécial ;</p>
+			</div>
+		</p>
+		<p class="paragraphe_special">et ne contient pas :</p>
+		<div class="container">
+			<p>- de date de naissance ;</p>
+			<p>- ni prénom.</p>
+		</div>
+		<br>
+		<p id="paragraphe_special_1">Ce lien expire dans
+			{{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.</p>
+		<br>
+		<p id="paragraphe_special_2">Si vous ne trouvez pas l'email vérifiez les spams ou
+			<a id="link_special" href="{{ path('app_forgot_password_request') }}">réessayez</a>.</p>
+		<br>
+        <br>
+		<p id="paragraphe_special_2">Sinon retourner à l'
+			<a id="link_special" href="{{ path('app_home') }}">accueil</a>.</p>
+	</div>
+{% endblock %}
