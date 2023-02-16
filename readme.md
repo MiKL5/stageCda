@@ -1,10 +1,10 @@
-# Mission de stage de la formation Concepteur Développeur d'Application.
+# Missions de stage de la formation Concepteur Développeur d'Application.
 
-## Projet 1
+## **Projet 1**
 
 Créer une extension qui parcourt le projet Symfony et génère un diagramme de classe avec PlantUML.  
 
-## Projet 2
+## **Projet 2 (Principal)**
 
 Gesfluid est une application web.
 
