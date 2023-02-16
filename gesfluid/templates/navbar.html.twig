@@ -1,0 +1,68 @@
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand"
+              href="{{ path('app_home') }}"
+            >
+              <i class="fas fa-snowflake"></i> Gesfluid
+            </a>
+            {% if app.user %}
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu"
+              aria-expanded="false"
+              aria-label="Bouton de navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav mx-auto mb-lg-0">
+                {% if is_granted('ROLE_ADMIN') %}
+                <li class="nav-item small">
+                  <a class="nav-link" href="{{ path('admin') }}">
+                    <i class="fas fa-gears"></i> Administration
+                  </a>
+                </li>
+                {% endif %}
+                <li class="nav-item small">
+                  <a 
+                    class="nav-link {{ app.request.attributes.get('_route') == 'app_intervention' ? 'disabled' : '' }}"
+                    href={{ path('app_intervention') }}>
+                    <i class="fas fa-screwdriver-wrench"></i> Nouvelle intervention
+                  </a>
+                </li>
+
+                <li class="nav-item small">
+                  <a class="nav-link text-danger" data-bs-toggle="modal" data-bs-target="#modalLogout" href="">
+                    <i class="fas fa-right-from-bracket"></i> Déconnexion
+                  </a>
+                </li>
+              </ul>
+              <span class="navbar-text text-success small ms-auto">
+                <i class="fas fa-user"></i> {{ app.user.userIdentifier|upper }}
+              </span>
+            </div>
+            {% endif %}
+          </nav>
+
+          <div class="modal fade" id="modalLogout" tabindex="-1" aria-labelledby="modalLogoutLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalLogoutLabel">Déconnexion</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Êtes-vous sûr de vouloir vous déconnecter ?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Non</button>
+                  <a class="btn btn-sm btn-danger" href="{{ path('app_logout') }}">Oui</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

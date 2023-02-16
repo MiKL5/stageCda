@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+
+<form method="POST">
+
+  <div class="row d-flex justify-content-center align-items-center h-100 mt-5">
+    <div class="col-md-8 col-lg-6 col-xl-5">
+      <div class="card bg-dark text-white rounded">
+        <div class="card-body p-5 text-center">
+          {% if error %}
+          <div class="alert alert-danger mt-2 small" role="alert">
+            {{ error.messageKey|trans(error.messageData, 'security') }}
+          </div>
+          {% endif %}
+
+          <div class="mb-md-5 mt-md-4 pb-5">
+
+            <h1 class="small fw-bold mb-4"><i class="fas fa-right-to-bracket"></i> Connexion à Gesfluid</h1>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="inputUserId"><span class="small">Identifiant</span></label>
+              <input class="form-control form-control-sm" type="text" value="{{ last_username }}" name="userId" id="inputUserId" class="form-control" autocomplete="username" required autofocus>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="inputPassword"><span class="small">Mot de passe</span></label>
+              <input class="form-control form-control-sm" type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+            </div>
+
+            <input type="hidden" name="_csrf_token"
+                   value="{{ csrf_token('authenticate') }}"
+            >
+            {#
+                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                See https://symfony.com/doc/current/security/remember_me.html
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" name="_remember_me"> Remember me
+                    </label>
+                </div>
+            #}
+            <button class="btn btn-success btn-sm btn-login mt-3" type="submit"><span class="small">Se connecter</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock %}

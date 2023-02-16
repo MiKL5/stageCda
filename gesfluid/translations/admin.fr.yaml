@@ -1,0 +1,54 @@
+Home: Accueil
+Intervention: Interventions
+Interventions: Interventions
+Equipement: Equipement
+Equipements: Equipements
+Contenant: Contenants
+Contenants: Contenants
+Fluides: Fluides
+Accessoires: Accessoires
+Accessory: Accessoires
+ID: ID
+Utilisateurs: Utilisateurs
+Groupes d'utilisateurs: Groupes d'utilisateurs
+Date: Date
+Virgin Fluid Quantity: Quantité chargée de fluide vierge
+Recycled Fluid Quantity: Quantité chargée de fluide recyclé
+Regenerated Fluid Quantity: Quantité chargée de fluide régénéré
+For Processing Fluid Quantity: Quantité récupérée de fluide destiné au traitement
+Bsff Number: Numéro du BSFF (Trackdéchets)
+Reusable Fluid Quantity: Quantité de fluide conservé pour réutilisation
+Remarks: Observations
+Other Intervention Type: Autre type d'intervention
+Pdf Path: Chemin du fichier PDF généré
+InterventionType: Type d'interventions
+Types d'Interventions: Types d'interventions
+Equipment: Equipement
+Name: Nom
+Weight: Charge totale
+Control Frequency: Fréquence de contrôle
+Co2 Eq Tonnage: Tonnage équivalent CO2
+Leak Detection System: Présence d'un système permanent de détection de fuites
+Container: Contenant
+Serial Number: Numéro de série
+Capacity: Capacité
+Fluid Quantity: Quantité de fluide
+Fluid: Fluide
+Fluid Types: Types de fluides
+FluidType: Type de fluide
+Types de fluides: Types de fluides
+Detector: Détecteur
+Control Date: Date de contrôle
+User: Utilisateur
+User Id: Identifiant
+First Name: Prénom
+Last Name: Nom
+Firstname: Prénom
+Lastname: Nom
+User Group: Groupe
+Password: Mot de passe
+Group: Groupe
+Flammable: Inflammable
+Parameter: Paramètre
+Paramètres: Paramètres
+Value: Valeur

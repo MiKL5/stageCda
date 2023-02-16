@@ -1,0 +1,502 @@
+---
+FieldType: Text
+FieldName: Fiche_no
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Operateur
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Attestation_no
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Detenteur
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Equipement_ID
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Equipement_Fluide
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Equipement_Charge
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Equipement_teqCO2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Case_Assemblage
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_MiseService
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Modif
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Maintenance
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_CtrlPerio
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_CtrlNonPerio
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Demantel
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Autre
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: Autre
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Detecteur_ID
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Controle_Jour
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Controle_Mois
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Controle_Annee
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Bouton_Oui
+FieldFlags: 49152
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: 1
+FieldStateOption: Off
+FieldStateOption: 2
+---
+FieldType: Button
+FieldName: Case_HCFC_2
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_HCFC_30
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_HCFC_300
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_HFC_5
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_HFC_50
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_HFC_500
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Sans_12m
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Sans_6m
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Sans_3m
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Avec_24m
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Avec_12m
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Avec_6m
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Fuite_Oui
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Fuite_Non
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: Fuite_Loca_1
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Case_Rep_Fuite1_realisee
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Rep_Fuite1_AFaire
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: Fuite_Loca_2
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Case_Rep_Fuite2_realisee
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Rep_Fuite2_AFaire
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: Fuite_Loca_3
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Case_Rep_Fuite3_realisee
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_Rep_Fuite3_AFaire
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: 11_Quantite
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_QA
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_Denom
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_QB
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_QC
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_QDE
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_QD
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_BSFF
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_QE
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 11_Contenant_ID
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Case_12_UN1078
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_12_Autre140601
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_12_UN3161
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Case_12_Autre160504
+FieldFlags: 0
+FieldValue: Off
+FieldValueDefault: Off
+FieldJustification: Left
+FieldStateOption: Yes
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: 13_Instal
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 14_Observations
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign_Operateur_Nom
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign_Operateur_Qualite
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign_Operateur_Date
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign_Detenteur_Nom
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign_Detenteur_Qualite
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign_Detenteur_Date
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
