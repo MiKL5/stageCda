@@ -6,7 +6,11 @@ Créer une extension qui parcourt le projet Symfony et génère un diagramme de 
 
 ## **Projet 2 (Principal)**
 
-Gesfluid est une application web.
+<div align=center style=bolder>
+
+**Gesfluid est une application de gestion de fiches d'intervention concernant des équipements contenant des fluides frigorigènes.**
+
+</div>
 
 ### La gestion des utilisateurs
 La page d'accueil doit donner une vision synthétique de tous les utilisateurs par le dashboard.
