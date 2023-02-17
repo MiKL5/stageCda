@@ -1,0 +1,61 @@
+### EXTENSION ###
+###> symfony/framework-bundle ###
+extension/.env.local
+extension/.env.local.php
+extension/.env.*.local
+extension/config/secrets/prod/prod.decrypt.private.php
+extension/public/bundles/
+extension/var/
+extension/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+extension/phpunit.xml
+extension/.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+extension/.phpunit.result.cache
+extension/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> settings phpstorm ###
+/extension/.idea/
+###> settings phpstorm ###
+
+### --- ###
+
+### GESFLUID ###
+###> symfony/framework-bundle ###
+gesfluid/.env.local
+gesfluid/.env.local.php
+gesfluid/.env.*.local
+gesfluid/.env.test
+gesfluid/config/secrets/prod/prod.decrypt.private.php
+gesfluid/public/bin/
+gesfluid/public/bundles/
+gesfluid/var/
+gesfluid/vendor/
+gesfluid/migrations/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+gesfluid/phpunit.xml
+gesfluid/.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+gesfluid.phpunit.result.cache
+gesfluid/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/webpack-encore-bundle ###
+gesfluid/node_modules/
+# /public/build/
+gesfluid/npm-debug.log
+gesfluid/yarn-error.log
+gesfluid/.yarnclean
+###< symfony/webpack-encore-bundle ###
+gesfluid/test.http
+gesfluid/reload.sh
+gesfluid/public/interventions/*
