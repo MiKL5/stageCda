@@ -8,7 +8,7 @@ Créer une extension qui parcourt le projet Symfony et génère un diagramme de 
 
 <div align=center style=bolder>
 
-**Gesfluid est une application de gestion de fiches d'intervention concernant des équipements contenant des fluides frigorigènes.**
+## **Gesfluid est une application de gestion de fiches d'intervention concernant des équipements contenant des fluides frigorigènes.**
 
 </div>
 
