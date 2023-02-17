@@ -17,8 +17,8 @@ La page d'accueil doit donner une vision synthétique de tous les utilisateurs p
 #### Le dashboard
 * Afficher la liste des groupes ;  
     * ajouter un stagiaire dans le groupe que l'on veut ;
-    * Dans un second temps (permettre de modifier et supprimer);
-    * un booléen permet de savoir si l'utilisateur est actif ou nom (s'il n'y a pas de nom prénom et mot de passse ; il est inactif).
+    * Dans un second temps (permettre de modifier et supprimer) ;
+    * un booléen permet de savoir si l'utilisateur est actif ou nom (s'il n'y a pas de nom prénom et mot de passe ; il est inactif).
 #### La gestion des groupes
 * inscrire un groupe de stagiaire :  
     * créer l'identifiant (e-mail) ;
@@ -37,7 +37,7 @@ La page d'accueil doit donner une vision synthétique de tous les utilisateurs p
 * et n'est plus modifiable après (grâce au 'count') ;  
 
 
-#### Others improvements
+#### Autres améliorations
 * modifier les routes via React-router-dom ;  
-* en ce qui concerne _...._submit_scriscriber.php_, mettre une partie de ce code dans un service, car ce fichier est trop chargé;    
+* en ce qui concerne _'..._submit_scriscriber.php'_, mettre une partie de ce code dans un service, car ce fichier est trop chargé ;    
 * l'appli deviendra à terme multi-AFPA ;
