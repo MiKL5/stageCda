@@ -35,5 +35,5 @@ La page d'accueil doit donner une vision synthétique de tous les utilisateurs p
 
 #### Others improvements
 * modifier les routes via React-router-dom ;  
-* en ce qui concerne ...._submit_scriscriber.php, mettre une partie de ce code dans un service, car ce fichier est trop chargé;    
+* en ce qui concerne _...._submit_scriscriber.php_, mettre une partie de ce code dans un service, car ce fichier est trop chargé;    
 * l'appli deviendra à terme multi-AFPA ;
