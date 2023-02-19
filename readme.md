@@ -39,7 +39,7 @@ La page d'accueil doit donner une vision synthétique de tous les utilisateurs p
 
 #### Autres améliorations
 * modifier les routes via React-router-dom ;  
-* en ce qui concerne _'..._submit_scriscriber.php'_, mettre une partie de ce code dans un service, car ce fichier est trop chargé ;    
+* décharger une partie de _'FormSubmitScriscriber.php'_, dans un service ;    
 * l'appli deviendra à terme multi-AFPA ;
 
 ![mindmap](docs/mindmap.png)
