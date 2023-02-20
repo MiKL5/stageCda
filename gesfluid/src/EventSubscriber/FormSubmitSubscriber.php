@@ -1,5 +1,5 @@
 <?php
-namespace App\Services\EventSubscriber;
+namespace App\EventSubscriber;
 
 use App\Entity\Intervention;
 use ApiPlatform\Symfony\EventListener\EventPriorities;
@@ -10,9 +10,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
+
 use mikehaertl\pdftk\Pdf;
 
-class FormSubmitSubscriberService implements EventSubscriberInterface
+class FormSubmitSubscriber implements EventSubscriberInterface
 {
 
   private $fields = [
