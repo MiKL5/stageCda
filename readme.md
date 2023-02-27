@@ -3,7 +3,7 @@
 ![mindmap](docs/mindmap.png)
 ## **Projet 1**
 
-Créer une extension qui parcourt le projet Symfony et génère un diagramme de classe avec PlantUML.  
+Créer une [extension](extension) qui parcourt le projet Symfony et génère un diagramme de classe avec PlantUML.  
 ![mindmap](docs/extension.png)
 
 
@@ -11,7 +11,7 @@ Créer une extension qui parcourt le projet Symfony et génère un diagramme de 
 
 <div align=center style=bolder>
 
-## **Gesfluid est une application de gestion de fiches d'intervention concernant des équipements contenant des fluides frigorigènes.**
+## **[Gesfluid](https://github.com/MiKL5/Gesfluid) est une application de gestion de fiches d'intervention concernant des équipements contenant des fluides frigorigènes.**
 
 </div>
 
@@ -44,4 +44,5 @@ La page d'accueil doit donner une vision synthétique de tous les utilisateurs p
 * modifier les routes via React-router-dom ;  
 * décharger une partie de _'FormSubmitScriscriber.php'_, dans un service ;    
 * l'appli deviendra à terme multi-AFPA ;  
-![mindmap](docs/Gesfluid.png)
+![mindmap](docs/Gesfluid.png)  
+Aller à [Gesfluid](https://github.com/MiKL5/Gesfluid)
