@@ -44,4 +44,4 @@ La page d'accueil doit donner une vision synthétique de tous les utilisateurs p
 * modifier les routes via React-router-dom ;  
 * décharger une partie de _'FormSubmitScriscriber.php'_, dans un service ;    
 * l'appli deviendra à terme multi-AFPA ;  
-![mindmap](docs/gesfluid.png)
+![mindmap](docs/Gesfluid.png)
