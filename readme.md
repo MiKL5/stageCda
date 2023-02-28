@@ -16,7 +16,7 @@ Créer une [extension](extension) qui parcourt le projet Symfony et génère un 
 </div>
 
 ### La gestion des utilisateurs
-La page d'accueil doit donner une vision synthétique de tous les utilisateurs par le dashboard.
+La page d'accueil doit donner une vision synthétique de tous les utilisateurs par le dashboard.  
 #### Le dashboard
 * Afficher la liste des groupes ;  
     * ajouter un stagiaire dans le groupe que l'on veut ;
